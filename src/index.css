@@ -6,12 +6,15 @@
 
 
 
+
+
 .sidebar{
   background:  #1f2937;
   color: white;
   width: 220px;
   min-height: 100vh;
   padding: 20px;
+  transition: width 0.3s ease;
 }
 
 .sidebar ul{
@@ -133,7 +136,8 @@
 
 
 .input-form{
-  width: 50%;
+  width: 100%;
+  max-width: 500px;
   margin:100px auto;
 }
 
@@ -181,6 +185,20 @@
   border-color: #4f46e5;        
   box-shadow: 0 4px 12px rgba(79,70,229,0.2);
 }
+
+
+
+@media (max-width: 768px) {
+
+  .content {
+    padding: 12px;
+  }
+
+  .sidebar {
+    width: 160px; 
+  }
+}
+  
 
 
 
